@@ -1,6 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import React from "react";
+import Image from "next/image";
 
 const ProfileArticle = ({ d }: { d: any }) => {
   const router = useRouter();
@@ -17,7 +18,7 @@ const ProfileArticle = ({ d }: { d: any }) => {
             {d.content.slice(0, 350)}
           </p>
         </div>
-        <img src={d.image} className="w-52 h-36 rounded-lg" />
+        <Image src={d.image} className="w-52 h-36 rounded-lg"  alt={""}/>
       </div>
     </div>
   );

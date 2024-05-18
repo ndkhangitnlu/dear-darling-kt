@@ -34,7 +34,7 @@ const SinglePost = async ({ params }: { params: { slug: string } }) => {
           <p className="text-xs ">{data?.author.slug}</p>
         </div>
       </div>
-      <img
+      <Image
         src={data?.image}
         className="mt-3 w-[80%] rounded-md mb-5"
         alt="image"
