@@ -93,14 +93,14 @@ const Article = ({ props }: { props: any }) => {
             {props.content.slice(0, 350)}
           </p>
         </div>
-        <img src={props.image} className="w-52 h-36 rounded-lg" />
+        <Image src={props.image} className="w-52 h-36 rounded-lg"  alt={""}/>
       </div>
       <div className="mt-5 md:hidden">
-        <img
+        <Image
           src={props.image}
           className="w-full rounded-lg"
           onClick={() => router.push(`/post/${props._id}`)}
-        />
+         alt={""}/>
 
         <div onClick={() => router.push(`/post/${props._id}`)}>
           {" "}

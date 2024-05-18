@@ -20,6 +20,7 @@ import { ProfileStore } from "../../../../store/ProfileStore";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Plus from "@/Icons/Plus";
+import Image from "next/image";
 
 const UserProfile = () => {
   const pathname = usePathname();
@@ -56,11 +57,11 @@ const UserProfile = () => {
   return (
     <div className="shadow-md mt-10 max-w-sm  rounded-lg   ">
       <div className="relative flex items-center justify-center">
-        <img
+        <Image
           src="https://img.freepik.com/free-vector/abstract-orange-background-with-lines-halftone-effect_1017-32107.jpg?size=626&ext=jpg&ga=GA1.2.850850250.1686201740&semt=ais"
           className=" w-full h-24  opacity-80  "
-        ></img>
-        <img
+         alt={""}/>
+        <Image
           src={data?.image}
           alt=""
           className="h-16 w-16 absolute bottom-[-20px] rounded-full"

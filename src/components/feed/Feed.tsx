@@ -16,7 +16,8 @@ const Feed = ({ data }: { data: [] }) => {
       setFilteredPost(filter);
     } else {
     }
-  }, [text]);
+    // change dependency key
+  }, [text, data]);
 
   return (
     <div>
